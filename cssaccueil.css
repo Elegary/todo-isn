@@ -1,0 +1,106 @@
+/**
+Ce fichier CSS contient les règles CSS appliquées sur la page d'accueil du site (welcome.php).
+*/
+*{
+	margin:0 ;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+html{
+	font-size: 10px;
+	font-family: "Lato", Arial, sans-serif;
+}
+
+section{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+
+h1{
+	font-size: 7rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	/*border: 3px solid #fff;*/
+	position: absolute;
+	top: 37%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	padding: 5rem 10rem;
+}
+
+h3{
+	font-size: 5rem;
+	letter-spacing: 2px;
+	/*border: 3px solid #fff;*/
+	position: absolute;
+	top: 45%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	padding: 5rem 10rem;
+}
+
+/*Animation*/
+@keyframes change {
+	0% {
+		background-position: 0 50%;
+	}	
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+
+
+#button{
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-decoration: none;
+	font-size: 27px;
+	font-family: "Lato", Arial;
+	padding: 40px 90px;
+	border: 2px solid white;
+	outline: 1px solid rgba(255,255,255,0.7);
+	transition: all 0.7s;
+}
+
+#button:hover{
+	text-shadow: 0 0 20px rgba(255,255,255,1);
+	box-shadow: inset 0 0 20px rgba(255,255,255,0.2);
+	outline-color: rgba(255,255,255, 0);
+	outline-offset: 40px;
+}
+
+#button2{
+	position: absolute;
+	top: 70%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: "Lato", Arial;
+	padding: 40px 90px;
+	border: 2px solid white;
+	outline: 1px solid rgba(255,255,255,0.7);
+	transition: all 0.7s;
+	
+}
+
+#button2:hover{
+	text-shadow: 0 0 20px rgba(255,255,255,1);
+	box-shadow: inset 0 0 20px rgba(255,255,255,0.2);
+	outline-color: rgba(255,255,255,0);
+	outline-offset: 40px;
+}
